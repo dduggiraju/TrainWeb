@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend> Text box</legend>
+      <table>
+        <tr>
+          <td>text input</td>
+          <td><input type="text"></input></td>
+        </tr>
+        <tr>
+          <td>text input disabled</td>
+          <td><input type="text" disabled="true"></input></td>
+        </tr>
+        <tr>
+          <td>text input focused</td>
+          <td><input type="text" autofocus="true"></input></td>
+        </tr>
+
+
+
+      </table>
+  </fieldset>
+
+  <fieldset>
+    <legend> personal details</legend>
+  <table>
+    <tr>
+      <td>First Name</td>
+      <td><input type="text" autocomplete="on"></input></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" autocomplete="on"></input></td>
+    </tr>
+    <tr>
+      <td>Birth Date</td>
+      <td><input type="date"></input></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td><form >
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female">Female
+          <input type="radio" name="gender" value="other">Other </form>
+      </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="email" autocomplete="on"></input></td>
+    </tr>
+    <tr>
+      <td>Mobile Number</td>
+      <td><input type="tel" autocomplete="on"></input></td>
+    </tr>
+
+
+  </table>
+  </fieldset>
+  <fieldset>
+    <legend>Address</legend>
+  <table>
+    <tr>
+      <td>Address line #1</td>
+      <td><input type="text" required="true"></input></td>
+    </tr>
+    <tr>
+      <td>Address line #2</td>
+      <td><input type="text"></input></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" required="true"></input></td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td>
+        <select>
+          <option value="none"></option>
+          <option value="Texas">TX</option>
+          <option value="California">CA</option>
+          <option value="New York">NY</option>
+          <option value="Florida">FL</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Zip</td>
+      <td><input type="text" pattern="[0-9]{5}"required="true"></input><input type="submit"></td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>
+        <input list="countries">
+        <datalist id="countries">
+          <option value="United States">
+          <option value="United Kingdom">
+          <option value="India">
+          <option value="Ireland">
+        </datalist>
+      </td>
+    </tr>
+
+
+
+  </table>
+</fieldset>
+  </form>
+</body>
+</html>
